@@ -1,0 +1,21 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 1;
+  background: 
+    linear-gradient(45deg,#18aac7 50%,#9d08c7a1 0),
+    linear-gradient(45deg,#0290b300 50%,#00af72 0),
+    linear-gradient(-45deg,#7c03c2 50%,#ab0b7d99 0),
+    linear-gradient(-45deg,#00000071 50%,#8b01ad 0),
+    linear-gradient(#00478f 0 0);
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  animation: l18 1.5s infinite;
+}
+@keyframes l18{
+  0%   {background-position:50% 50%,50% 50%,50%  50% ,50% 50%,50% 50%}
+  25%  {background-position:0  100%,100%  0,50%  50% ,50% 50%,50% 50%}
+  50%  {background-position:0  100%,100%  0,100% 100%,0   0  ,50% 50%}
+  75%  {background-position:50% 50%,50% 50%,100% 100%,0   0  ,50% 50%}
+  100% {background-position:50% 50%,50% 50%,50%  50% ,50% 50%,50% 50%}
+}
